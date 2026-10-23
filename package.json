@@ -1,0 +1,28 @@
+{
+  "name": "@chainweb/livekit-kit",
+  "version": "0.1.0",
+  "description": "Reusable LiveKit integration: role-based tokens, moderation, recording, webhooks, and resilient React/browser helpers.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    "./server": { "types": "./dist/server/index.d.ts", "default": "./dist/server/index.js" },
+    "./client": { "types": "./dist/client/index.d.ts", "default": "./dist/client/index.js" },
+    "./react": { "types": "./dist/react/index.d.ts", "default": "./dist/react/index.js" }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": { "build": "tsc -p .", "typecheck": "tsc -p . --noEmit", "test": "node --test test/" },
+  "peerDependencies": {
+    "livekit-client": "^2.17.0",
+    "livekit-server-sdk": "^2.15.0",
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "livekit-client": { "optional": true },
+    "livekit-server-sdk": { "optional": true },
+    "react": { "optional": true }
+  },
+  "devDependencies": {
+    "livekit-client": "^2.17.2", "livekit-server-sdk": "^2.15.0",
+    "react": "^18.3.1", "@types/react": "^18.3.0", "@types/node": "^22.0.0", "typescript": "^5.9.3"
+  }
+}

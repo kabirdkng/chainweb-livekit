@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "target": "ES2021", "module": "ESNext", "moduleResolution": "bundler", "lib": ["dom", "dom.iterable", "es2022"],
+    "jsx": "react-jsx", "declaration": true, "outDir": "dist", "rootDir": "src", "strict": true, "skipLibCheck": true, "esModuleInterop": true
+  },
+  "include": ["src"]
+}
